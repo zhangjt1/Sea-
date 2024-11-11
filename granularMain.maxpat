@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -393,7 +393,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 203.0, 503.0, 118.0, 136.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 24.0, 170.0, 118.0, 136.0 ],
+					"presentation_rect" : [ 282.0, 30.0, 118.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -424,7 +424,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -541,7 +541,7 @@
 
 							}
  ],
-						"originid" : "pat-1308"
+						"originid" : "pat-6850"
 					}
 ,
 					"patching_rect" : [ 46.0, 11.0, 79.0, 22.0 ],
@@ -776,7 +776,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -848,7 +848,7 @@
 
 							}
  ],
-						"originid" : "pat-1310"
+						"originid" : "pat-6852"
 					}
 ,
 					"patching_rect" : [ 907.0, 346.0, 67.0, 22.0 ],
@@ -1415,7 +1415,7 @@
 
 			}
  ],
-		"originid" : "pat-1306",
+		"originid" : "pat-6848",
 		"parameters" : 		{
 			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
 			"parameterbanks" : 			{
@@ -1432,7 +1432,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "grainGen.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Sea++",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
