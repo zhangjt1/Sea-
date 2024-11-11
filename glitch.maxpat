@@ -4,16 +4,28 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1650.0, 96.0, 1212.0, 901.0 ],
+		"rect" : [ 134.0, 87.0, 1212.0, 717.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 64.0, 89.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-135",
@@ -1108,6 +1120,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-95", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-20", 0 ]
 				}
@@ -1512,7 +1531,7 @@
 
 			}
  ],
-		"originid" : "pat-8975",
+		"originid" : "pat-2274",
 		"parameters" : 		{
 			"obj-4" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
 			"obj-56" : [ "live.gain~", "live.gain~", 0 ],
@@ -1530,7 +1549,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "dial-up.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/Sea++/Media",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media",
 				"patcherrelativepath" : "./Media",
 				"type" : "WAVE",
 				"implicit" : 1
