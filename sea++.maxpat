@@ -10,10 +10,32 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -981.0, 87.0, 1372.0, 779.0 ],
+		"rect" : [ -1406.0, 87.0, 1372.0, 779.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-7",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "fullvisuals.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 992.0, 544.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 983.0, 571.0, 128.0, 128.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
@@ -399,7 +421,7 @@
 
 							}
  ],
-						"originid" : "pat-1013"
+						"originid" : "pat-2269"
 					}
 ,
 					"patching_rect" : [ 278.0, 95.0, 95.0, 22.0 ],
@@ -1004,7 +1026,7 @@
 
 			}
  ],
-		"originid" : "pat-901",
+		"originid" : "pat-2073",
 		"parameters" : 		{
 			"obj-1::obj-112" : [ "live.gain~[3]", "live.gain~", 0 ],
 			"obj-1::obj-2" : [ "live.gain~[17]", "live.gain~", 0 ],
@@ -1028,6 +1050,34 @@
 			"obj-5::obj-6" : [ "live.gain~[19]", "live.gain~", 0 ],
 			"obj-5::obj-62::obj-67::obj-11" : [ "live.gain~[5]", "live.gain~[2]", 0 ],
 			"obj-5::obj-9" : [ "live.gain~[12]", "live.gain~", 0 ],
+			"obj-7::obj-166::obj-35::obj-10" : [ "Red X offset", "Red X offset", 0 ],
+			"obj-7::obj-166::obj-35::obj-12" : [ "Red Y offset", "Red Y offset", 0 ],
+			"obj-7::obj-166::obj-35::obj-14" : [ "Green X offset", "Green X offset", 0 ],
+			"obj-7::obj-166::obj-35::obj-16" : [ "Green vertical offset", "Green vertical offset", 0 ],
+			"obj-7::obj-166::obj-35::obj-18" : [ "Blue X offset", "Blue X offset", 0 ],
+			"obj-7::obj-166::obj-35::obj-20" : [ "Bliue Y offset", "Bliue Y offset", 0 ],
+			"obj-7::obj-166::obj-35::obj-23" : [ "textbutton", "textbutton", 0 ],
+			"obj-7::obj-166::obj-35::obj-31::obj-23" : [ "gswitch2[2]", "gswitch2", 0 ],
+			"obj-7::obj-166::obj-35::obj-36" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-7::obj-166::obj-35::obj-42" : [ "live.toggle[1]", "live.toggle[1]", 0 ],
+			"obj-7::obj-166::obj-35::obj-48" : [ "live.toggle[2]", "live.toggle[2]", 0 ],
+			"obj-7::obj-166::obj-35::obj-54" : [ "live.toggle[3]", "live.toggle[3]", 0 ],
+			"obj-7::obj-166::obj-35::obj-59" : [ "live.toggle[4]", "live.toggle[4]", 0 ],
+			"obj-7::obj-166::obj-35::obj-65" : [ "live.toggle[5]", "live.toggle[5]", 0 ],
+			"obj-7::obj-175::obj-108::obj-10" : [ "Red X offset[1]", "Red X offset", 0 ],
+			"obj-7::obj-175::obj-108::obj-12" : [ "Red Y offset[1]", "Red Y offset", 0 ],
+			"obj-7::obj-175::obj-108::obj-14" : [ "Green X offset[1]", "Green X offset", 0 ],
+			"obj-7::obj-175::obj-108::obj-16" : [ "Green vertical offset[1]", "Green vertical offset", 0 ],
+			"obj-7::obj-175::obj-108::obj-18" : [ "Blue X offset[1]", "Blue X offset", 0 ],
+			"obj-7::obj-175::obj-108::obj-20" : [ "Bliue Y offset[1]", "Bliue Y offset", 0 ],
+			"obj-7::obj-175::obj-108::obj-23" : [ "textbutton[1]", "textbutton", 0 ],
+			"obj-7::obj-175::obj-108::obj-31::obj-23" : [ "gswitch2[3]", "gswitch2", 0 ],
+			"obj-7::obj-175::obj-108::obj-36" : [ "live.toggle[8]", "live.toggle", 0 ],
+			"obj-7::obj-175::obj-108::obj-42" : [ "live.toggle[10]", "live.toggle[1]", 0 ],
+			"obj-7::obj-175::obj-108::obj-48" : [ "live.toggle[9]", "live.toggle[2]", 0 ],
+			"obj-7::obj-175::obj-108::obj-54" : [ "live.toggle[7]", "live.toggle[3]", 0 ],
+			"obj-7::obj-175::obj-108::obj-59" : [ "live.toggle[6]", "live.toggle[4]", 0 ],
+			"obj-7::obj-175::obj-108::obj-65" : [ "live.toggle[11]", "live.toggle[5]", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -1069,6 +1119,54 @@
 				"obj-5::obj-9" : 				{
 					"parameter_longname" : "live.gain~[12]"
 				}
+,
+				"obj-7::obj-175::obj-108::obj-10" : 				{
+					"parameter_longname" : "Red X offset[1]"
+				}
+,
+				"obj-7::obj-175::obj-108::obj-12" : 				{
+					"parameter_longname" : "Red Y offset[1]"
+				}
+,
+				"obj-7::obj-175::obj-108::obj-14" : 				{
+					"parameter_longname" : "Green X offset[1]"
+				}
+,
+				"obj-7::obj-175::obj-108::obj-16" : 				{
+					"parameter_longname" : "Green vertical offset[1]"
+				}
+,
+				"obj-7::obj-175::obj-108::obj-18" : 				{
+					"parameter_longname" : "Blue X offset[1]"
+				}
+,
+				"obj-7::obj-175::obj-108::obj-20" : 				{
+					"parameter_longname" : "Bliue Y offset[1]"
+				}
+,
+				"obj-7::obj-175::obj-108::obj-36" : 				{
+					"parameter_longname" : "live.toggle[8]"
+				}
+,
+				"obj-7::obj-175::obj-108::obj-42" : 				{
+					"parameter_longname" : "live.toggle[10]"
+				}
+,
+				"obj-7::obj-175::obj-108::obj-48" : 				{
+					"parameter_longname" : "live.toggle[9]"
+				}
+,
+				"obj-7::obj-175::obj-108::obj-54" : 				{
+					"parameter_longname" : "live.toggle[7]"
+				}
+,
+				"obj-7::obj-175::obj-108::obj-59" : 				{
+					"parameter_longname" : "live.toggle[6]"
+				}
+,
+				"obj-7::obj-175::obj-108::obj-65" : 				{
+					"parameter_longname" : "live.toggle[11]"
+				}
 
 			}
 ,
@@ -1097,37 +1195,50 @@
 			}
 , 			{
 				"name" : "bach-analysis.wav",
-				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media",
-				"patcherrelativepath" : "./Media",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
+				"patcherrelativepath" : "./Media/Audio",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "baldwin-angelou.wav",
-				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media",
-				"patcherrelativepath" : "./Media",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
+				"patcherrelativepath" : "./Media/Audio",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "commedia.wav",
-				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media",
-				"patcherrelativepath" : "./Media",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
+				"patcherrelativepath" : "./Media/Audio",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "data-handler.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "dial-up.wav",
-				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media",
-				"patcherrelativepath" : "./Media",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
+				"patcherrelativepath" : "./Media/Audio",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "frogs1.wav",
-				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media",
-				"patcherrelativepath" : "./Media",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
+				"patcherrelativepath" : "./Media/Audio",
 				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fullvisuals.maxpat",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -1153,50 +1264,50 @@
 			}
 , 			{
 				"name" : "landscape-photographer.wav",
-				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media",
-				"patcherrelativepath" : "./Media",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
+				"patcherrelativepath" : "./Media/Audio",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "morse (1).wav",
-				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media",
-				"patcherrelativepath" : "./Media",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
+				"patcherrelativepath" : "./Media/Audio",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "morse (2).wav",
-				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media",
-				"patcherrelativepath" : "./Media",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
+				"patcherrelativepath" : "./Media/Audio",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "morse (3).wav",
-				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media",
-				"patcherrelativepath" : "./Media",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
+				"patcherrelativepath" : "./Media/Audio",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "morse (4).wav",
-				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media",
-				"patcherrelativepath" : "./Media",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
+				"patcherrelativepath" : "./Media/Audio",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "morse (5).wav",
-				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media",
-				"patcherrelativepath" : "./Media",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
+				"patcherrelativepath" : "./Media/Audio",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "morse.wav",
-				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media",
-				"patcherrelativepath" : "./Media",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
+				"patcherrelativepath" : "./Media/Audio",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -1223,15 +1334,15 @@
 			}
 , 			{
 				"name" : "rain.wav",
-				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media",
-				"patcherrelativepath" : "./Media",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
+				"patcherrelativepath" : "./Media/Audio",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sapolsky.wav",
-				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media",
-				"patcherrelativepath" : "./Media",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
+				"patcherrelativepath" : "./Media/Audio",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -1240,6 +1351,24 @@
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 9/Examples/effects/transposer-folder/lib",
 				"patcherrelativepath" : "../../../../Library/Application Support/Cycling '74/Max 9/Examples/effects/transposer-folder/lib",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video-handler.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vizzie-datatexconvert.js",
+				"bootpath" : "C74:/packages/Vizzie/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vizzie-global.js",
+				"bootpath" : "C74:/packages/Vizzie/code",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -1258,22 +1387,40 @@
 			}
 , 			{
 				"name" : "vonnegut.wav",
-				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media",
-				"patcherrelativepath" : "./Media",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
+				"patcherrelativepath" : "./Media/Audio",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "vz.sepr8r.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-object.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-outputdim.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "waves.wav",
-				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media",
-				"patcherrelativepath" : "./Media",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
+				"patcherrelativepath" : "./Media/Audio",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "windchimes.wav",
-				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media",
-				"patcherrelativepath" : "./Media",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
+				"patcherrelativepath" : "./Media/Audio",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
