@@ -2,42 +2,17 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 8,
-			"minor" : 6,
-			"revision" : 2,
+			"major" : 9,
+			"minor" : 0,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
 		"rect" : [ 134.0, 109.0, 661.0, 691.0 ],
-		"bglocked" : 0,
 		"openinpresentation" : 1,
-		"default_fontsize" : 12.0,
-		"default_fontface" : 0,
-		"default_fontname" : "Arial",
-		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 1,
-		"objectsnaponopen" : 1,
-		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
-		"lefttoolbarpinned" : 0,
-		"toptoolbarpinned" : 0,
-		"righttoolbarpinned" : 0,
-		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
-		"tallnewobj" : 0,
-		"boxanimatetime" : 200,
-		"enablehscroll" : 1,
-		"enablevscroll" : 1,
-		"devicewidth" : 0.0,
-		"description" : "",
-		"digest" : "",
-		"tags" : "",
-		"style" : "",
-		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-57",
@@ -155,30 +130,6 @@
 					"outlettype" : [ "jit_gl_texture", "" ],
 					"patching_rect" : [ 209.0, 583.0, 153.0, 22.0 ],
 					"text" : "jit.gl.texture @name Words"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-64",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 440.0, 372.0, 81.0, 22.0 ],
-					"text" : "anchor_y 240"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-62",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 343.0, 372.0, 81.0, 22.0 ],
-					"text" : "anchor_x 320"
 				}
 
 			}
@@ -562,12 +513,17 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
-					"text" : "node.script max-client.js"
+					"text" : "node.script max-client.js",
+					"textfile" : 					{
+						"filename" : "max-client.js",
+						"flags" : 0,
+						"embed" : 0,
+						"autowatch" : 1
+					}
+
 				}
 
 			}
@@ -742,18 +698,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-28",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 362.0, 463.0, 197.0, 22.0 ],
-					"text" : "jit.rota @offset_x 1 @boundmode 4"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -776,7 +720,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 928.0, 15.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 191.0, 22.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 191.0, 22.0, 24.0, 24.0 ],
+					"svg" : ""
 				}
 
 			}
@@ -971,7 +916,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 117.0, 22.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 117.0, 22.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 117.0, 22.0, 24.0, 24.0 ],
+					"svg" : ""
 				}
 
 			}
@@ -1226,15 +1172,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
-					"order" : 2,
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -1242,7 +1180,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -1396,13 +1334,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-27", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"source" : [ "obj-28", 0 ]
 				}
 
 			}
@@ -1687,20 +1618,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
-					"source" : [ "obj-62", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
-					"source" : [ "obj-64", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-112", 0 ],
 					"source" : [ "obj-65", 0 ]
 				}
@@ -1729,13 +1646,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
-					"source" : [ "obj-84", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-110", 0 ],
 					"midpoints" : [ 1005.5, 577.29358850152903, 957.5, 577.29358850152903 ],
 					"source" : [ "obj-89", 0 ]
@@ -1750,9 +1660,10 @@
 
 			}
  ],
+		"originid" : "pat-538",
 		"dependency_cache" : [ 			{
 				"name" : "cycling74.png",
-				"bootpath" : "~/Documents/Max 8/Sea++",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-",
 				"patcherrelativepath" : ".",
 				"type" : "PNG",
 				"implicit" : 1
@@ -1765,7 +1676,7 @@
 			}
 , 			{
 				"name" : "max-client.js",
-				"bootpath" : "~/Documents/Max 8/Sea++",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1

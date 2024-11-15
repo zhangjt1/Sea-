@@ -10,7 +10,8 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 972.0, 716.0 ],
+		"rect" : [ -981.0, 87.0, 1372.0, 779.0 ],
+		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -173,7 +174,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal" ],
 					"patching_rect" : [ 686.0, 516.0, 682.0, 199.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 157.0, 1014.0, 692.0, 174.0 ],
+					"presentation_rect" : [ 157.0, 1014.0, 925.0, 239.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -398,7 +399,7 @@
 
 							}
  ],
-						"originid" : "pat-4156"
+						"originid" : "pat-1013"
 					}
 ,
 					"patching_rect" : [ 278.0, 95.0, 95.0, 22.0 ],
@@ -1003,7 +1004,7 @@
 
 			}
  ],
-		"originid" : "pat-4044",
+		"originid" : "pat-901",
 		"parameters" : 		{
 			"obj-1::obj-112" : [ "live.gain~[3]", "live.gain~", 0 ],
 			"obj-1::obj-2" : [ "live.gain~[17]", "live.gain~", 0 ],
