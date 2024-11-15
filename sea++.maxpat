@@ -15,6 +15,42 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 5,
+					"numoutlets" : 5,
+					"outlettype" : [ "bang", "bang", "bang", "bang", "" ],
+					"patching_rect" : [ 621.0, 213.0, 64.0, 22.0 ],
+					"text" : "sel 0 1 2 3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 716.0, 208.0, 59.0, 22.0 ],
+					"text" : "random 4"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 709.0, 176.0, 100.0, 22.0 ],
+					"text" : "r changeChannel"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -421,7 +457,7 @@
 
 							}
  ],
-						"originid" : "pat-2269"
+						"originid" : "pat-4111"
 					}
 ,
 					"patching_rect" : [ 278.0, 95.0, 95.0, 22.0 ],
@@ -747,6 +783,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-120", 0 ]
 				}
@@ -763,6 +813,34 @@
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-15", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-120", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-122", 0 ],
+					"source" : [ "obj-15", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-15", 3 ]
 				}
 
 			}
@@ -1026,7 +1104,7 @@
 
 			}
  ],
-		"originid" : "pat-2073",
+		"originid" : "pat-3891",
 		"parameters" : 		{
 			"obj-1::obj-112" : [ "live.gain~[3]", "live.gain~", 0 ],
 			"obj-1::obj-2" : [ "live.gain~[17]", "live.gain~", 0 ],
@@ -1215,6 +1293,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "cycling74.png",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-",
+				"patcherrelativepath" : ".",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "data-handler.maxpat",
 				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
@@ -1225,6 +1310,12 @@
 				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
 				"patcherrelativepath" : "./Media/Audio",
 				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fit_jweb_to_bounds.js",
+				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -1270,6 +1361,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "max-client.js",
+				"bootpath" : "~/Documents/Max 9/Projects/Sea-",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "morse (1).wav",
 				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
 				"patcherrelativepath" : "./Media/Audio",
@@ -1312,6 +1410,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "n4m.monitor.maxpat",
+				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "ocean.maxpat",
 				"bootpath" : "~/Documents/Max 9/Projects/Sea-",
 				"patcherrelativepath" : ".",
@@ -1337,6 +1441,12 @@
 				"bootpath" : "~/Documents/Max 9/Projects/Sea-/Media/Audio",
 				"patcherrelativepath" : "./Media/Audio",
 				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "resize_n4m_monitor_patcher.js",
+				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

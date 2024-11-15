@@ -485,7 +485,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1352.0, 537.0, 400.0, 220.0 ],
+					"patching_rect" : [ 1193.0, 538.0, 400.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -513,6 +513,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -1133,7 +1135,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-107", 0 ],
-					"midpoints" : [ 1075.5, 641.29358850152903, 1340.5, 641.29358850152903, 1340.5, 528.29358850152903, 1361.5, 528.29358850152903 ],
+					"midpoints" : [ 1075.5, 641.29358850152903, 1340.5, 641.29358850152903, 1340.5, 528.29358850152903, 1202.5, 528.29358850152903 ],
 					"source" : [ "obj-110", 1 ]
 				}
 
@@ -1660,7 +1662,7 @@
 
 			}
  ],
-		"originid" : "pat-538",
+		"originid" : "pat-2775",
 		"dependency_cache" : [ 			{
 				"name" : "cycling74.png",
 				"bootpath" : "~/Documents/Max 9/Projects/Sea-",
